@@ -2658,10 +2658,10 @@ function getCookie(name) {
 
 // 获取用户偏好模式（优先使用 cookie，否则跟随系统）
 function getPreferredTheme() {
-    var userPreference = getCookie('themeMode');
-    if (userPreference) {
-        return userPreference; // 用户已手动设置，使用该设置
-    }
+    // var userPreference = getCookie('themeMode');
+    // if (userPreference) {
+    //     return userPreference; // 用户已手动设置，使用该设置
+    // }
     // 检测系统偏好
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
